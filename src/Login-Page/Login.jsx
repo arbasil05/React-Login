@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Login.css'
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const [userName, setuserName] = useState("");
@@ -40,7 +41,8 @@ export default function Login() {
                         <img src="./xIcon.png" alt="Google" />
                     </div>
                     <div className="signup-element">
-                        <p>New? <a href="">Create an account</a> </p>
+                        <p>New ? <Link to="signup">Create an account</Link></p>
+                       
                     </div>
 
                 </div>
