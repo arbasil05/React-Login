@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* 
+@media screen and (max-width:470px){
+    .img-container{
+        display: none;
+    }
+    
+} */
+
+.img-container{
+    width: 550px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    min-width: 400px;
+    padding: 10px;
+}
+
+.input-element{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid gray ;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.input-element img{
+    width: 20px;
+}
+
+.input-element input{
+    border: 0;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.input-element input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.rememberMe-element{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.rememberMe-element input{
+    scale: 1.3;
+}
+
+.button-element button{
+    background-color: #6fa9e3;
+    color: white;
+    border: 0;
+    padding: 15px 35px 15px 35px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.button-element button:hover{
+    cursor: pointer;
+    background-color: #1b8dff;
+
+
+}
+
+.otherLogin-element{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.otherLogin-element img{
+    width: 30px;
+}
+
+.otherLogin-element img:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
