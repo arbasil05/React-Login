@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import './Login.css'
 
 export default function Login() {
+    const [userName, setuserName] = useState("");
+
+    let handleUsername = (e) => {
+        setuserName(e.target.value);
+        console.log(userName);
+    }
+
     return (
         <>
             <div className="container">
@@ -12,7 +20,7 @@ export default function Login() {
 
                     <div className="input-element">
                         <img src="./usernameIcon.png" alt="User Name Icon" />
-                        <input type="text" placeholder='Your Name' />
+                        <input type="text" placeholder='Username' onChange={handleUsername} />
                     </div>
                     <div className="input-element">
                         <img src="./passwordIcon.png" alt="Password Icon" />
